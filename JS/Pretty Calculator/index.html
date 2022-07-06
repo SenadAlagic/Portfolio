@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nice Little Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="calculator">
+            <div id="displayDiv">
+                <input type="text" name="" id="textoutput">
+            </div>
+            <div id="controls">
+                <div id="keypad">
+                    <button onclick="SendInput(7)">7</button>
+                    <button onclick="SendInput(8)">8</button>
+                    <button onclick="SendInput(9)">9</button>
+                    <button onclick="Operation('+')">+</button>
+                    <button onclick="SendInput(4)">4</button>
+                    <button onclick="SendInput(5)">5</button>
+                    <button onclick="SendInput(6)">6</button>
+                    <button onclick="Operation('-')">-</button>
+                    <button onclick="SendInput(1)">1</button>
+                    <button onclick="SendInput(2)">2</button>
+                    <button onclick="SendInput(3)">3</button>
+                    <button onclick="Operation('*')">*</button>
+                    <button onclick="SendInput('.')">.</button>
+                    <button onclick="SendInput(0)">0</button>
+                    <button onclick="Operation('=')">=</button>
+                    <button onclick="Operation('/')">/</button>
+                </div>
+                <div id="operations">
+                    <button onclick="Operation('C')">C</button>
+                    <button onclick="Operation('CE')">CE</button>
+                    <button onclick="Operation('Inv')">Inv</button>
+                    <button onclick="Operation('%')">%</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

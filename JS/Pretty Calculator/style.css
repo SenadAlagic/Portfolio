@@ -1,0 +1,65 @@
+html,body,#wrapper
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+}
+#textoutput
+{
+    font-size: larger;
+    margin: 10px;
+    width:90%;
+    height: 60%;
+}
+
+#calculator
+{
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40%;
+    width: 20%;
+    background-color: rgb(210, 206, 206);
+}
+#displayDiv
+{
+    height: 20%;
+    width: 100%;
+    /* background-color: green; */
+}
+#controls
+{
+    height: 80%;
+    width: 100%;
+    /* background-color: red; */
+}
+#keypad
+{
+    text-align: center;
+    box-sizing: border-box;
+    padding: 5px;
+    float:left;
+    height: 100%;
+    width: 70%;
+    /* background-color: burlywood; */
+}
+#operations
+{
+    box-sizing: border-box;
+    padding: 5px;
+    float:left;
+    height: 100%;
+    width: 30%;
+    /* background-color: yellow; */
+}
+button
+{
+    margin:2px;
+    width: 20%;
+    height: 23%;    
+}
+#operations button
+{
+    height:23%;
+    width: 90%;
+}
