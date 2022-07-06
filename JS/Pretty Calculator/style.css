@@ -6,6 +6,7 @@ html,body,#wrapper
 }
 #textoutput
 {
+    text-align: right;
     font-size: larger;
     margin: 10px;
     width:90%;
@@ -62,4 +63,8 @@ button
 {
     height:23%;
     width: 90%;
+}
+#equals
+{
+    background-color: rgb(81, 158, 252);
 }
