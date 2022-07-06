@@ -3,7 +3,7 @@ var interval;
 var milisecondsCount=secondsCount=minutesCount=0;
 function Start()
 {
-    interval=setInterval(Stopwatch,10);
+    interval=setInterval(Stopwatch,8);
 }
 function Stop()
 {
