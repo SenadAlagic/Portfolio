@@ -1,0 +1,45 @@
+html,body,#wrapper
+{
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    background-color: gray;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#container
+{
+    margin-top:50px;
+    margin-right: auto;
+    margin-left: auto;
+    width: calc(160px*3);
+    height: calc(160px*2);
+    text-align: center;
+}
+.colorDiv
+{
+    margin-left: auto;
+    margin-right: auto;
+    float:left;
+    width: 140px;
+    height: 140px;
+    box-sizing: border-box;
+    margin:10px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+#titleDiv
+{
+    margin-top: 50px;
+    font-size: xx-large;
+}
+#guess
+{
+    margin-top:20px;
+    font-size: 60px;
+}
+#tryagain
+{
+    font-size: x-large;
+}
