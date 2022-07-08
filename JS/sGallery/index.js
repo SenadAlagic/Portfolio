@@ -13,14 +13,6 @@ app.listen(
     ()=>console.log(`it's alive at http://localhost:${PORT}`)
 )
 
-app.get('/tshirt',(req,res)=>
-{
-    res.status(200).send({
-        tshirt:'majica',
-        size:'large'
-    })
-});
-
 app.get('/everyImage',(req,res)=>
 {
     db.all("select * from Images",(err,rows)=>{
@@ -49,6 +41,15 @@ app.post('/addRandomImage',(req,res)=>{
         result: `Succesfully added ${Id},${Image}${Description}`
     })
 })
+
+/*--------------- TUTORIAL CODE ---------------*/
+app.get('/tshirt',(req,res)=>
+{
+    res.status(200).send({
+        tshirt:'majica',
+        size:'large'
+    })
+});
 
 app.post('/tshirt/:id',(req,res)=>{
     const{id}=req.params;
