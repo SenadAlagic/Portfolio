@@ -23,6 +23,15 @@ app.get('/everyImage',(req,res)=>
     });    
 });
 
+app.get('/imageNumbers',(req,res)=>{
+    db.all('select count(*) from Images',(err,rows)=>{
+        if(err) return console.error(err.message);
+
+        console.log(rows);
+        res.status(200).send({rows})
+    });
+})
+
 app.post('/addRandomImage',(req,res)=>{
     const{Id}=req.body;
     const{Image}=req.body;
@@ -40,6 +49,23 @@ app.post('/addRandomImage',(req,res)=>{
         //result: `Succesfully added the image`
         result: `Succesfully added ${Id},${Image}${Description}`
     })
+})
+app.post('/addImage',(req,res)=>{
+    const{Image}=req.body;
+    const{Description}=req.body;
+    let noRows=0;
+    db.all('select count(*) from Images',(err,rows)=>{
+        if(err) return console.error(err.message);
+
+        console.log(rows);
+        noRows=rows;
+    });
+
+    db.all(`insert into Images values (${noRows+2},"${Image}","${Description}")`,(err,rows)=>{
+        if(err) return console.error(err.message);
+
+        console.log("Inserting succesfull");
+    });
 })
 
 /*--------------- TUTORIAL CODE ---------------*/

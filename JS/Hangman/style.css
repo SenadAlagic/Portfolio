@@ -1,0 +1,21 @@
+html, body, #wrapper
+{
+    height: 100%;
+    width: 100%;
+}
+#title
+{
+    font-size: xx-large;
+    text-align: center;
+}
+#word
+{
+    font-size:xx-large;
+    text-align: center;
+}
+.word
+{
+    display: inline;
+    margin: 2px;
+    background-color: beige;
+}
